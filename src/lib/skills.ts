@@ -82,4 +82,6 @@ export const skillIcons: Record<string, string> = {
   n8n: '/icons/n8n.svg',
   'Gmail API': '/icons/gmail.svg',
   'Groq AI': '/icons/ai.svg',
+  JWT: '/icons/jwt.svg',
+  SQLAlchemy: '/icons/sqlalchemy.svg',
 };

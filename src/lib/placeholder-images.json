@@ -1,0 +1,11 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "about-me",
+      "description": "A professional portrait of a developer.",
+      "imageUrl": "/images/professional-amour.png",
+      "imageHint": "developer portrait"
+    }
+  ]
+}

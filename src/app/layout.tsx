@@ -6,6 +6,7 @@ import { Providers } from '@/components/providers';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
+import { StructuredData } from '@/components/structured-data';
 import './globals.css';
 
 const inter = Inter({
@@ -96,7 +97,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${poppins.variable}`}>
-      <head />
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={cn(
           'min-h-screen bg-background font-body antialiased',

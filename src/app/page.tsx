@@ -1,4 +1,5 @@
 
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
@@ -8,6 +9,14 @@ import { ScrollReveal } from '@/components/scroll-reveal';
 import { Button } from '@/components/ui/button';
 import { projects, about, author } from '@/lib/data';
 import { placeholderImages } from '@/lib/placeholder-images.json';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Amour Akowakou - Experienced Fullstack Developer specializing in Django, FastAPI, Node.js, Laravel, React/Next.js, and AI automation. Building innovative web applications.',
+  alternates: {
+    canonical: '/',
+  },
+};
 
 export default function Home() {
   const featuredProjects = projects.slice(0, 3);

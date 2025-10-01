@@ -2,7 +2,7 @@ Parfait 🚀 ! Je vais te rédiger un **README bien structuré et professionnel*
 
 ---
 
-# 🚀 Firebase Studio + Next.js Starter
+# 🚀 Portfolio + Next.js Starter
 
 Un **starter moderne** basé sur **Next.js** et **Firebase Studio**, conçu pour accélérer le développement d’applications web performantes et évolutives.
 
@@ -21,8 +21,8 @@ Un **starter moderne** basé sur **Next.js** et **Firebase Studio**, conçu pour
 ### 1️⃣ Cloner le projet
 
 ```bash
-git clone https://github.com/ton-utilisateur/firebase-studio-starter.git
-cd firebase-studio-starter
+git clone https://github.com/devakowakou/resume-dev-akowakou.git
+cd resume-dev-akowakou
 ```
 
 ### 2️⃣ Installer les dépendances

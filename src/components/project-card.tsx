@@ -34,6 +34,9 @@ export function ProjectCard({ project }: { project: Project }) {
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             data-ai-hint={project.imageHint}
+            loading="lazy"
+            quality={85}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           <div className="absolute bottom-0 left-0 p-4">

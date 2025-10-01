@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, Mail } from 'lucide-react';
@@ -8,9 +9,9 @@ import { AnimatedText, AnimatedCharacters } from './animated-text';
 
 const heroTitle = ['Turning Vision Into', 'Reality With Code', 'And Design.'];
 const heroSubtext =
-  'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in Django, Node.js, Laravel, React.js and web development.';
+  'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in Django, FastAPI, Node.js, Laravel, React.js, and AI automation with n8n, ChatGPT, and modern technologies.';
 
-export function Hero() {
+export const Hero = memo(function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-secondary to-background">
       <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
@@ -56,4 +57,4 @@ export function Hero() {
       </div>
     </section>
   );
-}
+});

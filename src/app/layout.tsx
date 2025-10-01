@@ -23,26 +23,55 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://resume-dev-akowakou.vercel.app'),
   title: {
-    default: 'Amour Akowakou | Fullstack Developer',
+    default: 'Amour Akowakou | Fullstack Developer & AI Engineer',
     template: '%s | Amour Akowakou',
   },
   description:
-    'Fullstack developer — Django, Node.js, Laravel, React/Next.js. Transforming visions into reality with code & design.',
+    'Experienced Fullstack Developer specializing in Django, FastAPI, Node.js, Laravel, React/Next.js, and AI automation. Building innovative web applications with n8n, ChatGPT, and modern technologies.',
+  keywords: [
+    'Fullstack Developer',
+    'Django Developer',
+    'FastAPI',
+    'React Developer',
+    'Next.js',
+    'Node.js',
+    'Laravel',
+    'Python Developer',
+    'AI Automation',
+    'n8n',
+    'ChatGPT Integration',
+    'Web Development',
+    'Software Engineer',
+    'Amour Akowakou',
+  ],
+  authors: [{ name: 'Amour Akowakou', url: 'https://resume-dev-akowakou.vercel.app' }],
+  creator: 'Amour Akowakou',
+  publisher: 'Amour Akowakou',
   openGraph: {
-    title: 'Amour Akowakou | Fullstack Developer',
+    title: 'Amour Akowakou | Fullstack Developer & AI Engineer',
     description:
-      'Fullstack developer — Django, Node.js, Laravel, React/Next.js. Transforming visions into reality with code & design.',
-    url: 'https://akowakou-amour.vercel.app', 
+      'Experienced Fullstack Developer specializing in Django, FastAPI, Node.js, Laravel, React/Next.js, and AI automation.',
+    url: 'https://resume-dev-akowakou.vercel.app', 
     siteName: 'Amour Akowakou Portfolio',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/images/professional-amour.png',
+        width: 1200,
+        height: 630,
+        alt: 'Amour Akowakou - Fullstack Developer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amour Akowakou | Fullstack Developer',
+    title: 'Amour Akowakou | Fullstack Developer & AI Engineer',
     description:
-      'Fullstack developer — Django, Node.js, Laravel, React/Next.js. Transforming visions into reality with code & design.',
+      'Experienced Fullstack Developer specializing in Django, FastAPI, Node.js, Laravel, React/Next.js, and AI automation.',
+    images: ['/images/professional-amour.png'],
   },
   robots: {
     index: true,
@@ -54,6 +83,9 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
+  },
+  verification: {
+    google: 'your-google-verification-code',
   },
 };
 

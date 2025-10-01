@@ -7,6 +7,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { StructuredData } from '@/components/structured-data';
+import { HydrationFix } from '@/components/hydration-fix';
 import './globals.css';
 
 const inter = Inter({
@@ -108,6 +109,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Providers>
+          <HydrationFix />
           <div className="relative flex min-h-dvh flex-col bg-background">
             <Header />
             <main className="flex-1">{children}</main>

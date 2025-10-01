@@ -51,22 +51,45 @@ export function ContactForm() {
   }, [state, toast]);
 
   return (
-    <form ref={formRef} action={formAction} className="space-y-6">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+    <form ref={formRef} action={formAction} className="space-y-4 sm:space-y-6">
+      <div className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2">
         <div className="space-y-2">
-          <Label htmlFor="name">Name</Label>
-          <Input id="name" name="name" placeholder="Your Name" required />
+          <Label htmlFor="name" className="text-sm sm:text-base">Name</Label>
+          <Input 
+            id="name" 
+            name="name" 
+            placeholder="Your Name" 
+            required 
+            className="h-12 text-base"
+            autoComplete="name"
+          />
           {state.errors?.name && <p className="text-sm text-destructive">{state.errors.name[0]}</p>}
         </div>
         <div className="space-y-2">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" placeholder="your@email.com" required />
+          <Label htmlFor="email" className="text-sm sm:text-base">Email</Label>
+          <Input 
+            id="email" 
+            name="email" 
+            type="email" 
+            placeholder="your@email.com" 
+            required 
+            className="h-12 text-base"
+            autoComplete="email"
+            inputMode="email"
+          />
           {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
         </div>
       </div>
       <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
-        <Textarea id="message" name="message" placeholder="Your message..." rows={5} required />
+        <Label htmlFor="message" className="text-sm sm:text-base">Message</Label>
+        <Textarea 
+          id="message" 
+          name="message" 
+          placeholder="Your message..." 
+          rows={5} 
+          required 
+          className="min-h-[120px] text-base resize-y"
+        />
         {state.errors?.message && <p className="text-sm text-destructive">{state.errors.message[0]}</p>}
       </div>
       <div>

@@ -2,8 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Mobile optimizations */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* iOS Safari specific fixes */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  /* Better text rendering on mobile */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Touch-friendly buttons and links */
+@layer base {
+  button, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    touch-action: manipulation;
+  }
+  
+  /* Prevent zoom on input focus (iOS) */
+  input, textarea, select {
+    font-size: 16px;
+  }
+  
+  /* Better touch targets */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
 }
 
 @layer base {

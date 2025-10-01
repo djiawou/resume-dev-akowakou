@@ -25,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
       className="relative h-full w-full"
     >
       <div
-        className="group relative flex h-full flex-col overflow-hidden rounded-lg border bg-card shadow-lg [transform:translateZ(75px)] [transform-style:preserve-3d]"
+        className="group relative flex h-full min-h-[480px] flex-col overflow-hidden rounded-lg border bg-card shadow-lg [transform:translateZ(75px)] [transform-style:preserve-3d]"
       >
         <div className="relative h-48 w-full overflow-hidden">
           <Image
@@ -41,7 +41,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </div>
         </div>
         <div className="flex flex-1 flex-col p-4">
-          <p className="flex-1 text-sm text-muted-foreground">{project.description}</p>
+          <p className="line-clamp-3 min-h-[4.5rem] text-sm text-muted-foreground">{project.description}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="flex items-center gap-1.5">

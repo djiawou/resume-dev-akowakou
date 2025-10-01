@@ -79,4 +79,7 @@ export const skillIcons: Record<string, string> = {
   Odoo: '/icons/odoo.svg',
   XML: '/icons/xml.svg',
   Linux: '/icons/linux.svg',
+  n8n: '/icons/n8n.svg',
+  'Gmail API': '/icons/gmail.svg',
+  'Groq AI': '/icons/ai.svg',
 };

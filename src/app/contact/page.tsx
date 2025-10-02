@@ -23,7 +23,7 @@ const contactMethods = [
     icon: <Image src="/icons/whatsapp.svg" alt="WhatsApp" width={24} height={24} />,
     title: 'WhatsApp',
     value: '+229 01 58 18 65 69',
-    href: 'https://wa.me/22901581869',
+    href: 'https://wa.me/2290158186569',
   },
   {
     icon: <MapPin className="h-6 w-6" style={{ color: '#25D366' }} />,

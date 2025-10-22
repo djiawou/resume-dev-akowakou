@@ -5,9 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight, Briefcase, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { AnimatedText, AnimatedCharacters } from './animated-text';
 
-const heroTitle = ['Turning Vision Into', 'Reality With Code', 'And Design.'];
 const heroSubtext =
   'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects, showcasing my expertise in Django, FastAPI, Node.js, Laravel, React.js, and AI automation with n8n, ChatGPT, and modern technologies.';
 

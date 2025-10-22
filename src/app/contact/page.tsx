@@ -1,6 +1,6 @@
 
 import { Metadata } from 'next';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import { ContactForm } from '@/components/contact-form';
 import { ScrollReveal } from '@/components/scroll-reveal';
@@ -38,10 +38,10 @@ export default function ContactPage() {
     <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
       <ScrollReveal>
         <h1 className="text-4xl font-headline font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-center">
-          Let's Build Something Great
+          Let&apos;s Build Something Great
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground text-center">
-          Have a project in mind, a question, or just want to connect? I'm always open to discussing new opportunities and creative ideas.
+          Have a project in mind, a question, or just want to connect? I&apos;m always open to discussing new opportunities and creative ideas.
         </p>
       </ScrollReveal>
       

@@ -17,7 +17,7 @@ export default function ProjectsPage() {
           My Projects
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-          Here's a selection of my work. Feel free to explore and check out the live demos or source code.
+          Here&apos;s a selection of my work. Feel free to explore and check out the live demos or source code.
         </p>
       </ScrollReveal>
 

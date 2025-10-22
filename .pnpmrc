@@ -1,0 +1,17 @@
+# Configuration pnpm
+# Optimisations pour pnpm
+
+# Activer les workspaces si nécessaire
+auto-install-peers=true
+
+# Optimiser l'installation
+node-linker=isolated
+
+# Cache des paquets
+cache-dir=.pnpm-store
+
+# Résolution des versions
+resolution-mode=highest
+
+# Hooks pour les scripts
+enable-pre-post-scripts=true

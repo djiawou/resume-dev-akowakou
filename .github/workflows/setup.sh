@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Script de configuration pour GitHub Actions avec Vercel et pnpm
+# Utilisation: ./setup-github-actions.sh
+
+echo "🚀 Configuration de GitHub Actions pour le déploiement sur Vercel..."
+
+# Vérifier si les secrets sont configurés
+echo "📋 Vérification des secrets requis..."
+
+# Instructions pour la configuration manuelle
+echo ""
+echo "=== CONFIGURATION MANUELLE REQUISE ==="
+echo ""
+echo "1. Allez dans votre repository GitHub"
+echo "2. Settings > Secrets and variables > Actions"
+echo "3. Ajoutez ces secrets :"
+echo ""
+echo "🔑 Secrets Vercel (obligatoires) :"
+echo "   - VERCEL_TOKEN : Token d'accès Vercel"
+echo "   - VERCEL_ORG_ID : ID de l'organisation Vercel"
+echo "   - VERCEL_PROJECT_ID : ID du projet Vercel"
+echo ""
+echo "🔑 Variables d'environnement (optionnelles) :"
+echo "   - NEXT_PUBLIC_FIREBASE_API_KEY : Clé API Firebase publique"
+echo "   - NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN : Domaine d'authentification"
+echo "   - NEXT_PUBLIC_FIREBASE_PROJECT_ID : ID du projet Firebase"
+echo ""
+echo "📋 Étapes pour obtenir les secrets Vercel :"
+echo ""
+echo "   1. Connectez-vous à https://vercel.com"
+echo "   2. Importez votre repository GitHub"
+echo "   3. Notez l'ID du projet (visible dans l'URL)"
+echo "   4. Allez dans Settings > Tokens > Create Token"
+echo "   5. Copiez le token généré"
+echo "   6. Trouvez l'Org ID dans l'URL du dashboard"
+echo ""
+echo "🛠️ Technologies configurées :"
+echo "   - Package Manager : pnpm 9.x"
+echo "   - Node.js : Version 20"
+echo "   - Build Command : pnpm run build"
+echo "   - Install Command : pnpm install --frozen-lockfile"
+echo ""
+echo "✅ Configuration terminée !"
+echo ""
+echo "🔄 Prochaines étapes :"
+echo "1. Push ces fichiers sur votre branche main"
+echo "2. Le workflow se déclenchera automatiquement"
+echo "3. Surveillez les runs dans l'onglet Actions de GitHub"
+echo ""
+echo "📝 Note: Le workflow principal (deploy.yml) utilise les branches main et dev"
+echo "📝 Branches: main (production) et dev (preview)"

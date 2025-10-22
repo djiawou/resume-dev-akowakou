@@ -1,0 +1,17 @@
+{
+  "buildCommand": "pnpm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "src/pages/api/**/*.js": {
+      "runtime": "nodejs20.x"
+    },
+    "src/app/api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}

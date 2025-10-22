@@ -2,9 +2,9 @@ name: CI/CD Pipeline (Vercel)
 
 on:
   push:
-    branches: [ main, dev ]
+    branches: [ master, dev ]
   pull_request:
-    branches: [ main, dev ]
+    branches: [ master, dev ]
 
 # Cancel in-progress runs for the same workflow and branch
 concurrency:
@@ -82,7 +82,7 @@ jobs:
     name: 🚀 Deploy to Vercel (Production)
     runs-on: ubuntu-latest
     needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
     steps:
       - name: 📥 Checkout code
         uses: actions/checkout@v4
